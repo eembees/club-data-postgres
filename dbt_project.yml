@@ -22,7 +22,7 @@ models:
     marts:
       daily_hour_distribution:
         materialized: table  # Maybe 'incremental' ???
-      +materialized: view
+      +materialized: table
     static:
       +materialized: table 
 

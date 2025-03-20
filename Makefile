@@ -18,7 +18,7 @@ ingestion:
 
 
 dbt-build:
-	docker-compose run dbt build
+	docker compose run --remove-orphans dbt run --full-refresh
 
 
 dbt-test:
@@ -27,3 +27,6 @@ dbt-test:
 
 dbt-compile:
 	docker-compose run dbt compile
+
+run-streamlit:
+	/usr/local/anaconda3/envs/animals/bin/streamlit run streamlit_app.py

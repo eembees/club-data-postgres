@@ -1,7 +1,7 @@
 ---
-subtitle: LEAP - Case
+subtitle: Case
 date: March 21st, 2025
-title: Animal-Go
+title: GymCPH Access Data
 author:
   - Magnus Berg Sletfjerding
 theme: metropolis
@@ -69,7 +69,10 @@ slide-level: 2
 ::: columns
 
 :::: column
-
+1. Easy to deploy
+2. Easy to use
+3. No login required
+4. No wait time required to pull data
 ::::
 
 :::: column
@@ -77,8 +80,6 @@ slide-level: 2
 ::::
 
 :::
-
-
 
 
 # Summary 
