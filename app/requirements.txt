@@ -1,0 +1,5 @@
+# been way too long since I wrote a file like this, wonder if I can use pip freeze still 
+altair
+pandas
+streamlit
+psycopg2-binary
