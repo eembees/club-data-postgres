@@ -37,12 +37,22 @@ slide-level: 2
 :::
 
 
+# The Solution 
+
+## Architecture 
+
+```{=latex}
+\includegraphics[width=\textwidth]{/Users/mags/Code/club-data-postgres/deck/gfx/architecture.png}
+```
+
+## Data Model
+```{=latex}
+\includegraphics[width=\textwidth]{/Users/mags/Code/club-data-postgres/deck/gfx/datamodel.png}
+```
 
 
 
-
-
-# Captain's log 👨‍✈️
+# Experiment overview 👨‍✈️
 ## Snowflake ❄️
 
 ::: columns
@@ -50,12 +60,12 @@ slide-level: 2
 :::: column
 ### Actions
 1. First I uploaded the Data into Snowflake, and began running SQL scripts on it.
-2. However, once I tried to use the DBT Labs connection I ran into trouble.
+2. However, once I tried to use the DBT Labs connection I ran into trouble. ➡️
 3. At this point I was rather pressed on time, so I said _bye Snowflake_ and swapped to my trusty postgres 🐘
 ::::
 
 :::: column
-
+### Blocker
 ```{=latex}
 \includegraphics[width=\textwidth]{/Users/mags/Code/club-data-postgres/deck/gfx/dbt-nay.png}
 ```
@@ -69,10 +79,9 @@ slide-level: 2
 ::: columns
 
 :::: column
-1. Easy to deploy
-2. Easy to use
-3. No login required
-4. No wait time required to pull data
+1. Runs locally
+2. No login required
+3. No quarantine time required to pull data
 ::::
 
 :::: column
@@ -83,9 +92,15 @@ slide-level: 2
 
 
 # Summary 
+## Feature list I did not have time to implement 
+1. Add weather data to check correlation over time 
+2. Segment by age and find if there are some times that are more/less popular with age.
 
-## WHat I would look into for scalability
-- Snowpipe setup 
+
+## What I would look into for scalability
+- Snowpipe setup for streaming data into it 
 - Airbyte type ELT job 
 - Connecting to internet to be able to process larger datasets
 - Figure out how to load HDF4 files from MODIS to do Geo Based things 
+
+## Questions?
